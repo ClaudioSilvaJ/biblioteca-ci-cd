@@ -4,7 +4,7 @@ from datetime import date
 
 import pytest
 
-SEXTA = date(2026, 10, 13)  # prazo cai sexta 30/10
+SEXTA = date(2026, 10, 16)  # prazo cai sexta 30/10
 SABADO = date(2026, 10, 17)  # prazo cairia sábado 31/10 -> segunda 02/11
 DOMINGO = date(2026, 10, 18)  # prazo cairia domingo 01/11 -> segunda 02/11
 
