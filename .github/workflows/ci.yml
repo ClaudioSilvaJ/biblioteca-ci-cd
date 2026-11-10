@@ -43,7 +43,7 @@ jobs:
     permissions:
       contents: read
       packages: write
-    needs: imagem
+    needs: criar-imagem
     runs-on: ubuntu-latest
     
     steps:
