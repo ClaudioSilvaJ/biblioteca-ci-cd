@@ -60,8 +60,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - run: npm install -g @railway/cli
-      - env:
+      - name: deploy
+        env:
           RAILWAY_TOKEN: $${{ secrets.RAILWAY_TOKEN }}
-      - run: railway up --service "${{ vars.RAILWAY_SERVICE }}" --ci
+        run: railway up --service "${{ vars.RAILWAY_SERVICE }}" --ci
 
         
